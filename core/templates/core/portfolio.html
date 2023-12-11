@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+{% block title %}Productos {% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/maarten-van-den-heuvel-EzH46XCDQRY-unsplash.jpg' %}{% endblock %}   
+
+{% block headers %}
+<h1>Productos</h1>
+<span class="subheading">Lo que ofrecemos</span>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Proyecto -->
+    <div class="row project">  	
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/carnes.natalia-gusakova-87qHNB71qZs-unsplash.jpg' %}" alt="">
+        </div>
+      <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">Carne y vegetales</h2>   
+        <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm....</p>
+        <p><a href="http://google.com">Más información</a></p>
+        </div>
+    </div>
+    <!-- Proyecto -->
+    <div class="row project">  	
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/vegetales.alina-chernysheva-oj2hBf5TOFM-unsplash.jpg' %}" alt="">
+        </div>
+      <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">Solo vegetales</h2>   
+        <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm....</p>
+        <p><a href="http://google.com">Más información</a></p>
+        </div>
+    </div>
+{% endblock %}
